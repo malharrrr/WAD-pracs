@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Webpage with Video and Images</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    
+    h1 {
+        color: #333;
+        margin-top: 20px;
+    }
+    
+    .video-container {
+        width: 80%;
+        margin: 20px auto;
+    }
+    
+    video {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+    }
+    
+    .image-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px;
+    }
+    
+    .image-gallery img {
+        width: calc(33% - 10px);
+        height: auto;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        background-color: white;
+    }
+    
+</style>
+<body>
+    <h1>Video and Image Gallery</h1>
+    
+    <!-- Video Section -->
+    <div class="video-container">
+        <video controls>
+            <source src="https://samplelib.com/sample-mp4.html" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+    </div>
+
+    <!-- Image Gallery Section -->
+    <div class="image-gallery">
+        <img src="https://unsplash.com/photos/OD9EOzfSOh0" alt="Coral Reef">
+<img src="https://unsplash.com/photos/8CqDvPuo_kI" alt="Wooden Bench">
+<img src="https://unsplash.com/photos/_3Q3tsJ01nc" alt="Living Room with Christmas Tree">
+
+        <!-- Add more images as needed -->
+    </div>
+</body>
+</html>

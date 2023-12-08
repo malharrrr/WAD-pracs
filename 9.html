@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animated Webpage</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            font-size: 200%;
+        }
+        
+        .fade-in {
+            animation: fadeIn 2s;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .slide-right {
+            transition: transform 2s;
+        }
+        
+        .slide-right:hover {
+            transform: translateX(20px);
+        }
+        
+        .rotate {
+            transition: transform 2s;
+            color: aqua;
+        }
+        
+        .rotate:hover {
+            transform: rotate(180deg);
+        }
+         
+    </style>
+</head>
+<body>
+    <h1 class="fade-in">Welcome to My Webpage</h1>
+    <p class="slide-right">This is a sample paragraph with CSS animations.</p>
+    <h3 class="rotate">HOVER TO ROTATE</h3>
+</body>
+</html>

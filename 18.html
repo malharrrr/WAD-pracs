@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Math Operations</title>
+    <style>
+        .container { text-align: center; margin-top: 50px; }
+        input, button { margin: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="number" id="number1" placeholder="Number 1">
+        <input type="number" id="number2" placeholder="Number 2">
+        <button onclick="calculate()">Calculate</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function calculate() {
+            var num1 = parseFloat(document.getElementById('number1').value);
+            var num2 = parseFloat(document.getElementById('number2').value);
+            var sum = num1 + num2;
+            var diff = num1 - num2;
+            var product = num1 * num2;
+            var division = num1 / num2;
+            document.getElementById('result').innerHTML = 
+                'Sum: ' + sum + 
+                '<br>Difference: ' + diff + 
+                '<br>Product: ' + product + 
+                '<br>Division: ' + division;
+        }
+    </script>
+</body>
+</html>
