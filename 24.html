@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide Element with Media Query</title>
+    <style>
+        .hidden-element {
+            display: block;
+            /* Your styles for the element when it's visible */
+        }
+
+        @media screen and (max-width: 600px) {
+            .hidden-element {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <p>This is some content that will always be visible.</p>
+
+    <div class="hidden-element">
+        <p>This is the element that will be hidden on smaller screens.</p>
+    </div>
+
+</body>
+</html>
